@@ -26,9 +26,9 @@ Hey,
 
 We have arranged for you to have access to our data! We don’t have any authentication requirements to access the data so you can directly access the following API publicly.
 
-[User Activity API](http://de-tech-challenge-api.herokuapp.com/api/v1/users)
+[User Activity API](http://REDACTED.com/users)
 
-This REST API endpoint contains our users and their activity status. Add `?page=X` at the end of the URL to page through the users. For example `http://de-tech-challenge-api.herokuapp.com/api/v1/users?page=3` to view the third page. This directly accesses our database and we plan on creating new endpoints (such as v2, v3, etc.) if we want to make any breaking changes in the future.
+This REST API endpoint contains our users and their activity status. Add `?page=X` at the end of the URL to page through the users. For example `http://REDACTED.com/users?page=3` to view the third page. This directly accesses our database and we plan on creating new endpoints (such as v2, v3, etc.) if we want to make any breaking changes in the future.
 
 Thanks,
 

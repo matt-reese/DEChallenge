@@ -1,0 +1,17 @@
+Elapsed time: 7.0 minutes, 24.836805000000027 seconds
+
+Total matches: 132268
+
+Sample output:
+ [{"firstname":"Roger","lastname":"Aaberg","location":"belk","last_active_date_api":"2017-01-04T00:00:00.000Z","last_active_date_db":"2016-12-25T00:00:00.000Z","user_type_classification":"Contributor","classification":"popular"},{"firstname":"Joseph","lastname":"Aadland","location":"concord","last_active_date_api":"2017-01-08T00:00:00.000Z","last_active_date_db":"2017-01-31T00:00:00.000Z","user_type_classification":"Contributor","classification":"popular"},{"firstname":"Kimberly","lastname":"Aaron","location":"avon","last_active_date_api":"2017-01-04T00:00:00.000Z","last_active_date_db":"2016-12-27T00:00:00.000Z","user_type_classification":"Leader","classification":"contributor"},{"firstname":"Jennifer","lastname":"Aaron","location":"arley","last_active_date_api":"2016-12-31T00:00:00.000Z","last_active_date_db":"2017-01-17T00:00:00.000Z","user_type_classification":"Contributor","classification":"contributor"},{"firstname":"Joseph","lastname":"Aaron","location":"coosada","last_active_date_api":"2016-12-28T00:00:00.000Z","last_active_date_db":"2017-02-01T00:00:00.000Z","user_type_classification":"Lurker","classification":"news_reader"},{"firstname":"Anthony","lastname":"Aaron","location":"argo","last_active_date_api":"2016-12-25T00:00:00.000Z","last_active_date_db":"2016-12-26T00:00:00.000Z","user_type_classification":"Contributor","classification":"news_reader"},{"firstname":"Beverly","lastname":"Aaron","location":"carrollton","last_active_date_api":"2016-12-26T00:00:00.000Z","last_active_date_db":"2017-01-10T00:00:00.000Z","user_type_classification":"Contributor","classification":"news_reader"},{"firstname":"Alfreda","lastname":"Aaron","location":"aliceville","last_active_date_api":"2017-01-13T00:00:00.000Z","last_active_date_db":"2017-01-09T00:00:00.000Z","user_type_classification":"Leader","classification":"contributor"},{"firstname":"Megan","lastname":"Aaron","location":"boaz","last_active_date_api":"2017-02-02T00:00:00.000Z","last_active_date_db":"2016-12-26T00:00:00.000Z","user_type_classification":"Contributor","classification":"contributor"},{"firstname":"Francisco","lastname":"Aaron","location":"chickasaw","last_active_date_api":"2017-01-27T00:00:00.000Z","last_active_date_db":"2016-12-25T00:00:00.000Z","user_type_classification":"Lurker","classification":"news_reader"}]
+
+SQL DDL:
+ CREATE TABLE matching_active_users (
+     firstname varchar(50)
+     , lastname varchar(50)
+     , location varchar(50)
+     , last_active_date_api date
+     , last_active_date_db date
+     , user_type_classification varchar(50)
+     , classification varchar(50)
+ )

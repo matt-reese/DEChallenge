@@ -1,0 +1,18 @@
+First, the assumption is that a Python 3.7 interpreter is installed. If not, Homebrew can be used to install Python 3.7.
+
+Navigate to this data-engineering directory in a command line (in my case, in Terminal on macOS).
+After that, run the command
+
+pip install pipenv
+
+This will install pipenv.
+Create a virtual environment with the required packages for this project by then running
+
+pipenv install
+
+This should install all of the dependencies needed to run the script matching_active_users.py into a virtual environment.
+Now, run the command
+
+pipenv run python matching_active_users.py
+
+from inside the data-engineering project directory, and the project should run as intended.

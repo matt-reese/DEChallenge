@@ -1,0 +1,9 @@
+Normally, the config.cfg file in this submission would be added to a .gitignore file; that is, it would not live in Github.
+The expectation is that the config.cfg file would be stored locally to prevent exposure of credentials. For the purposes
+of this exercise, I kept the file in the submission.
+
+The exercise was unclear as to whether it wanted me to calculate an is_active flag (of bool type), or some implementation like that,
+for each dataset. My JSON dumps the last_active_date for each dataset and does not include an is_active type calculation. The
+dataset is being loaded into a warehouse, where it can be easily manipulated to calculate new is_active flag columns if desired:
+(CASE WHEN DATEDIFF('2017-02-02', last_active_date_api) <= 30 THEN TRUE ELSE FALSE END AS is_active_api,
+CASE WHEN DATEDIFF('2017-02-02', last_active_date_db) <= 30 THEN TRUE ELSE FALSE END AS is_active_db)
